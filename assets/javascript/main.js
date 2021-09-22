@@ -1,5 +1,33 @@
 
 'use strict'
+$(".USD").click(function(){
+    
+    document.querySelector('.innerText').innerText = "USD";
+});
+$(".VND").click(function(){
+    
+    document.querySelector('.innerText').innerText = "VND";
+});
+$(".COP").click(function(){
+    
+    document.querySelector('.innerText').innerText = "COP";
+});
+$(".MMK").click(function(){
+    
+    document.querySelector('.innerText').innerText = "MMK";
+});
+$(".JAV").click(function(){
+    
+    document.querySelector('.innerText').innerText = "JAV";
+});
+$(".WIB").click(function(){
+    
+    document.querySelector('.innerText').innerText = "WIB";
+});
+$(".INS").click(function(){
+    
+    document.querySelector('.innerText').innerText = "INS";
+});
 var inputSearchElement = document.querySelector('input[name="input_Search"]');
 
 var araySuggestions = [
