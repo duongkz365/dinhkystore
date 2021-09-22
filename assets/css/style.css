@@ -340,7 +340,7 @@
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    cursor:alias;
+    cursor:pointer;
   
 }
 .change__money-item:hover {
