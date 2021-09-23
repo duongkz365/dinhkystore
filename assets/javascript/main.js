@@ -34,6 +34,9 @@ $(".USD").click(function(){
         moneyValues.forEach(function(emoney){
             emoney.innerText = `${money}`;
         });
+        moneyThroughtValue.forEach(function(throught){
+            throught.innerText = `${moneyThrought}`;
+        });
     
 });
 $(".VND").click(function(){
@@ -44,6 +47,9 @@ $(".VND").click(function(){
         });
         moneyValues.forEach(function(emoney){
             emoney.innerText = `${money*23000}`;
+        });
+        moneyThroughtValue.forEach(function(throught){
+            throught.innerText = `${moneyThrought*23000}`;
         });
     
 });
@@ -56,6 +62,9 @@ $(".COP").click(function(){
         moneyValues.forEach(function(emoney){
             emoney.innerText = `${money*12000}`;
         });
+        moneyThroughtValue.forEach(function(throught){
+            throught.innerText = `${moneyThrought*12000}`;
+        });
 });
 $(".MMK").click(function(){
     
@@ -65,6 +74,9 @@ $(".MMK").click(function(){
         });
         moneyValues.forEach(function(emoney){
             emoney.innerText = `${money*1200}`;
+        });
+        moneyThroughtValue.forEach(function(throught){
+            throught.innerText = `${moneyThrought*1200}`;
         });
 });
 $(".JAV").click(function(){
@@ -76,6 +88,9 @@ $(".JAV").click(function(){
         moneyValues.forEach(function(emoney){
             emoney.innerText = `${money*109.88}`;
         });
+        moneyThroughtValue.forEach(function(throught){
+            throught.innerText = `${moneyThrought*109.88}`;
+        });
 });
 $(".WIB").click(function(){
     
@@ -86,6 +101,9 @@ $(".WIB").click(function(){
         moneyValues.forEach(function(emoney){
             emoney.innerText = `${money*2200}`;
         });
+        moneyThroughtValue.forEach(function(throught){
+            throught.innerText = `${moneyThrought*2200}`;
+        });
 });
 $(".INS").click(function(){
     
@@ -95,6 +113,9 @@ $(".INS").click(function(){
         });
         moneyValues.forEach(function(emoney){
             emoney.innerText = `${money*30000}`;
+        });
+        moneyThroughtValue.forEach(function(throught){
+            throught.innerText = `${moneyThrought*30000}`;
         });
 });
 
