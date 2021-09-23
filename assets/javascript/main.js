@@ -8,44 +8,99 @@
 
 
 
+var money = 123.99;
+var moneyThrought = 198.99;
+var units = document.querySelectorAll('.unit');
+var moneyValues = document.querySelectorAll('.moneyValue');
+
+moneyValues.forEach(function(emoney){
+    emoney.innerText = `${money}`;
+});
+var moneyThroughtValue = document.querySelectorAll('.moneyThroughtValue');
+moneyThroughtValue.forEach(function(throught){
+    throught.innerText = `${moneyThrought}`;
+});
 
 
 
 
-
-
-var inputSearchElement = document.querySelector('input[name="input_Search"]');
 
 $(".USD").click(function(){
     
     document.querySelector('.innerText').innerText = "USD";
+    units.forEach(function(unit){
+        unit.innerText = "USD";
+        });
+        moneyValues.forEach(function(emoney){
+            emoney.innerText = `${money}`;
+        });
     
 });
 $(".VND").click(function(){
     
     document.querySelector('.innerText').innerText = "VND";
+    units.forEach(function(unit){
+        unit.innerText = "VND";
+        });
+        moneyValues.forEach(function(emoney){
+            emoney.innerText = `${money*23000}`;
+        });
+    
 });
 $(".COP").click(function(){
     
     document.querySelector('.innerText').innerText = "COP";
+    units.forEach(function(unit){
+        unit.innerText = "COP";
+        });
+        moneyValues.forEach(function(emoney){
+            emoney.innerText = `${money*12000}`;
+        });
 });
 $(".MMK").click(function(){
     
     document.querySelector('.innerText').innerText = "MMK";
+    units.forEach(function(unit){
+        unit.innerText = "MMK";
+        });
+        moneyValues.forEach(function(emoney){
+            emoney.innerText = `${money*1200}`;
+        });
 });
 $(".JAV").click(function(){
     
     document.querySelector('.innerText').innerText = "JAV";
+    units.forEach(function(unit){
+        unit.innerText = "JAV";
+        });
+        moneyValues.forEach(function(emoney){
+            emoney.innerText = `${money*109.88}`;
+        });
 });
 $(".WIB").click(function(){
     
     document.querySelector('.innerText').innerText = "WIB";
+    units.forEach(function(unit){
+        unit.innerText = "WIB";
+        });
+        moneyValues.forEach(function(emoney){
+            emoney.innerText = `${money*2200}`;
+        });
 });
 $(".INS").click(function(){
     
     document.querySelector('.innerText').innerText = "INS";
+    units.forEach(function(unit){
+        unit.innerText = "INS";
+        });
+        moneyValues.forEach(function(emoney){
+            emoney.innerText = `${money*30000}`;
+        });
 });
 
+
+
+var inputSearchElement = document.querySelector('input[name="input_Search"]');
 var araySuggestions = [
     'tomato',
     'apple',
@@ -293,4 +348,6 @@ $(".featured-products").click(function(){
 
    
 });
+
+
 
