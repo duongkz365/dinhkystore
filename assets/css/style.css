@@ -827,7 +827,7 @@
 .productMoney {
     display: inline-flex;
     font-size: 1.6rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .moneyValue {
     margin-right: 10px;
@@ -835,6 +835,16 @@
 }
 .unit {
     font-weight: 600;
+}
+.moneyThrought {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+.moneyThroughtValue {
+    text-decoration: line-through;
+    padding-right: 5px;
+    font-size: 1.6rem;
 }
 
 .discount {
@@ -879,6 +889,3 @@
     display: none;
 }
 /* newproducts */
-.update {
-color: red;
-}
