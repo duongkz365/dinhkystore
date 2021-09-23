@@ -1,8 +1,25 @@
-
 'use strict'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var inputSearchElement = document.querySelector('input[name="input_Search"]');
+
 $(".USD").click(function(){
     
     document.querySelector('.innerText').innerText = "USD";
+    
 });
 $(".VND").click(function(){
     
@@ -28,7 +45,6 @@ $(".INS").click(function(){
     
     document.querySelector('.innerText').innerText = "INS";
 });
-var inputSearchElement = document.querySelector('input[name="input_Search"]');
 
 var araySuggestions = [
     'tomato',
@@ -247,12 +263,34 @@ $(document).ready(function(){
 
 var testmoney = document.querySelector('.USD');
 
-testmoney.onclick = function(){
-    document.querySelector('.innerText').innerText = "USA";
-}
 
+$(".new-products").click(function(){
+    $(".featuredproducts,.specialproducts").hide();
+    $(".newproducts").show();
+    document.getElementById('new-products').classList.add("activeProduct");
+    document.querySelector("#special-products").classList.remove("activeProduct");
+    
+    document.querySelector("#featured-products").classList.remove("activeProduct");
 
+});
+$(".special-products").click(function(){
+    $(".featuredproducts,.newproducts").hide();
+    $(".specialproducts").show();
+    document.getElementById('special-products').classList.add("activeProduct");
+    document.querySelector("#new-products").classList.remove("activeProduct");
+    document.querySelector("#featured-products").classList.remove("activeProduct");
 
-$(".backk").onclick = function(){
-    console.log("a");
-}
+    
+
+});
+$(".featured-products").click(function(){
+    
+    $(".featuredproducts").show();
+    $(".specialproducts,.newproducts").hide();
+    document.getElementById('featured-products').classList.add("activeProduct");
+    document.querySelector("#new-products").classList.remove("activeProduct");
+    document.querySelector("#special-products").classList.remove("activeProduct");
+
+   
+});
+
